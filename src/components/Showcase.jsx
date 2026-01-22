@@ -5,7 +5,7 @@ import gsap from "gsap";
 
 const Showcase = () => {
 
-    const isTablet = useMediaQuery({ query: '(max-width: 1024px)'});
+    const isTablet = useMediaQuery({ query: "(max-width: 1024px)"});
 
     useGSAP(() => {
         if(!isTablet){
