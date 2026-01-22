@@ -54,7 +54,7 @@ const ModelScroll = () =>{
         })
 
         if(groupRef.current){
-            modelTimeline.to(groupRef.current.rotation, { y: Math.PI * 2, ease: 'power.inout'})
+            modelTimeline.to(groupRef.current.rotation, { y: Math.PI * 2, ease: 'power1.inOut'})
         }
 
         timeline.call(() => setTexture('/videos/feature-1.mp4'))
@@ -77,7 +77,7 @@ const ModelScroll = () =>{
     return (
         <group ref={groupRef}>
             <Suspense fallback={<Html> <h1 className="text-white text-3xl uppercase">Loading...</h1></Html>}>
-                <MacbookModel scale={isMobile ? 0.05 : 0.08} posistion={[0, -1, 0]}/>
+                <MacbookModel scale={isMobile ? 0.05 : 0.08} position={[0, -1, 0]}/>
             </Suspense>
         </group>
     )

@@ -23,16 +23,14 @@ const Performance = () => {
                 {
                     opacity: 1,
                     y: 0,
-                    ease: "power1.Out",
+                    ease: "power1.out",
                     scrollTrigger:{
                         trigger: ".content p",
                         start: "top bottom",
                         end: "top center",
                         scrub: true,
                         invalidateOnRefresh: true,
-
                     },
-
                 });
 
             if(isMobile) return;
